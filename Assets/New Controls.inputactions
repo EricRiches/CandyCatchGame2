@@ -2,13 +2,22 @@
     "name": "New Controls",
     "maps": [
         {
-            "name": "Player",
+            "name": "InGame",
             "id": "bbe856ac-5c07-41d6-ad2f-aa912fc2c093",
             "actions": [
                 {
                     "name": "Movement",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "2e1b21a0-def4-40d6-b2bd-08aa9e89b97e",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "f75e2d0a-4906-482b-8991-0f428c727700",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -18,25 +27,91 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "d63596ae-73ee-42e5-bceb-9da206bf69a5",
+                    "id": "fe3ee774-e2af-4d44-81fc-5c6ff8b99e58",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "3D Vector",
+                    "id": "a701bbd6-137a-4778-9239-ad335f1a947f",
+                    "path": "3DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Up",
+                    "id": "9cd253f2-d867-4935-aa0e-1b9c5df3f166",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Down",
+                    "id": "d4897037-2f13-4720-bda1-d3461351d227",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Left",
+                    "id": "23dd7077-f0d8-4b51-879c-722b57ec64a2",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Movement",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "ab27234c-ad4a-4274-b007-cafb38b7f2f2",
+                    "name": "Right",
+                    "id": "65b678ad-0573-4d0b-97dd-a78b2fa80e8d",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Movement",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Forward",
+                    "id": "d1c5245a-96c1-448c-8aae-bcb1c900f407",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Backward",
+                    "id": "ba4d4153-1e69-4a0e-b093-62cce9a337c8",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }
